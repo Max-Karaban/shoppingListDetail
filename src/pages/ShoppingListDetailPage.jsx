@@ -10,10 +10,6 @@ function ShoppingListDetailPage({ list, items: initialItems, members, currentUse
   const [memberList, setMemberList] = useState(members);
   const [newMemberName, setNewMemberName] = useState("");
 
-
-    
-
-
     function handleToggleItem(itemId) {
         const updated = items.map((item) =>
         item.id === itemId ? { ...item, isCompleted: !item.isCompleted } : item
